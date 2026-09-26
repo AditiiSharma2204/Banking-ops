@@ -1,0 +1,4 @@
+banking_ops
+*.exe
+*.o
+*.obj
