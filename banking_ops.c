@@ -188,7 +188,7 @@ static const char *fmt_money(long long paise, char *out, size_t size)
 /* Convenience wrapper: up to 4 formatted amounts may be live at once. */
 static const char *money(long long paise)
 {
-    static char bufs[4][48];
+    static char bufs[4][64];
     static int next = 0;
     next = (next + 1) % 4;
     return fmt_money(paise, bufs[next], sizeof bufs[next]);
