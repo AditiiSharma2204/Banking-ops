@@ -16,6 +16,6 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - name: Build (warnings as errors)
-        run: make CFLAGS="-std=c99 -Wall -Wextra -Wpedantic -Werror -O2"
+        run: gcc -std=c99 -Wall -Wextra -Wpedantic -Werror -O2 banking_ops.c -o banking_ops -lm
       - name: Smoke test
-        run: make test
+        run: sh tests/smoke_test.sh ./banking_ops
