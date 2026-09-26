@@ -14,7 +14,7 @@ jobs:
       run:
         shell: bash
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Build (warnings as errors)
         run: make CFLAGS="-std=c99 -Wall -Wextra -Wpedantic -Werror -O2"
       - name: Smoke test

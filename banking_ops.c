@@ -8,6 +8,7 @@
  * All money is stored as integer paise (1 rupee = 100 paise) to avoid
  * floating-point rounding errors.
  */
+#define __USE_MINGW_ANSI_STDIO 1   /* C99 printf formats (%lld) on MinGW */
 #include <ctype.h>
 #include <math.h>
 #include <stdio.h>

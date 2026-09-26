@@ -1,4 +1,4 @@
-CC      ?= gcc
+CC      = gcc
 CFLAGS  ?= -std=c99 -Wall -Wextra -Wpedantic -O2
 LDLIBS  = -lm
 TARGET  = banking_ops
