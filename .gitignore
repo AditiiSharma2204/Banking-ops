@@ -2,3 +2,9 @@ banking_ops
 *.exe
 *.o
 *.obj
+bank.db
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.streamlit/secrets.toml
